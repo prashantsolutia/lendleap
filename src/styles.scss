@@ -28,6 +28,8 @@ a {
 .font-12 {font-size: 12px !important;}
 .font-11 {font-size: 11px !important;}
 
+.m-0-auto{margin: 0 auto !important;}
+
 .clr-orange{color: #E48E29 !important;}
 
 // Form fields global changes (start here)
@@ -49,6 +51,9 @@ input.mat-input-element{
 }
 .mat-form-field-appearance-outline .mat-form-field-infix {
   padding: 6px 0 10px 10px;
+}
+.mat-form-field-wrapper{
+  padding-bottom: 5px !important;
 }
 .mat-hint { 
   color: rgba(61, 86, 108, 0.5) !important;

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'vex-setup-password',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SetupPasswordComponent implements OnInit {
 
-  constructor() { }
+  setpasswordform: FormGroup;
+  
+  constructor( 
+    private router: Router,
+    private fb: FormBuilder,
+    public dialog: MatDialog,  ) 
+    { }
 
-  ngOnInit(): void {
+  ngOnInit() { 
+    this.setpasswordform = this.fb.group({
+      newpassword: ['', Validators.required],
+      confirmPassword: ['', Validators.required], 
+    });
   }
 
 }

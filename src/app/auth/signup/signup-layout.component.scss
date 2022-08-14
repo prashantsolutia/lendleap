@@ -1,0 +1,13 @@
+.auth--header{
+    p{
+        font-size: 14px;
+        color: #E48E29;
+        font-weight: 400;
+        padding: 30px 0;
+        a{
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

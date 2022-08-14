@@ -7,16 +7,15 @@ import { OtpModalComponent } from './otp-modal/otp-modal.component';
 
 @Component({
   selector: 'vex-signup',
-  templateUrl: './signup.component.html',
-   //pipes:[FirstKeyPipe],
-  styleUrls: ['./signup.component.scss'],
+  templateUrl: './signup-layout.component.html', 
+  styleUrls: ['./signup-layout.component.scss'],
   animations: [
     fadeInUp400ms
   ]
 })
  
 
-export class SignupComponent implements OnInit {
+export class SignupLayoutComponent implements OnInit {
   signupform: FormGroup;
   
   constructor( 
