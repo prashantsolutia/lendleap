@@ -1,0 +1,86 @@
+@import "~simplebar/dist/simplebar.css";
+@import "~highlight.js/styles/androidstudio.css";
+// Vex Core
+@import "./@vex/styles/core";
+ 
+
+a {
+  cursor: pointer;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+.full-width, w-100{ width: 100%;}
+.container{max-width: 1280px; margin: 0 auto;}
+
+.fw-400 {font-weight: 400 !important;}
+.fw-500 {font-weight: 500 !important;}
+.fw-600 {font-weight: 600 !important;}
+
+.font-20 {font-size: 20px !important;}
+.font-19 {font-size: 19px !important;}
+.font-18 {font-size: 18px !important;}
+.font-17 {font-size: 17px !important;}
+.font-16 {font-size: 16px !important;}
+.font-15 {font-size: 15px !important;}
+.font-14 {font-size: 14px !important;}
+.font-13 {font-size: 13px !important;}
+.font-12 {font-size: 12px !important;}
+.font-11 {font-size: 11px !important;}
+
+.clr-orange{color: #E48E29 !important;}
+
+// Form fields global changes (start here)
+
+input.mat-input-element{
+  color: #19334A;
+}
+.mat-form-field-appearance-outline .mat-form-field-outline{
+  color: #567997 ;
+  background: #fff;
+  border-radius: 25px;
+}
+.mat-form-field-appearance-outline .mat-form-field-outline-end{
+  border-radius: 0 25px 25px 0 !important;
+}
+.mat-form-field-appearance-outline .mat-form-field-outline-start{
+  border-radius: 25px 0 0 25px !important;
+  min-width: 25px !important;
+}
+.mat-form-field-appearance-outline .mat-form-field-infix {
+  padding: 6px 0 10px 10px;
+}
+.mat-hint { 
+  color: rgba(61, 86, 108, 0.5) !important;
+  font-size: 12px !important;
+} 
+.mat-form-field-subscript-wrapper{
+  position: relative !important;
+}
+::-webkit-input-placeholder { 
+  color: #A4A4A4 !important;
+  font-weight: 300 !important;
+} 
+:-ms-input-placeholder { 
+  color: #A4A4A4 !important;
+  font-weight: 300 !important;
+} 
+::placeholder {
+  color: #A4A4A4 !important;
+  font-weight: 300 !important;
+}
+
+// Form fields global changes (end here)
+
+.primary--btn{
+  &.mat-raised-button{
+    background: #3D566C;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 20px;
+    min-width: 160px;
+    min-height: 40px;
+    box-shadow: none;
+  }
+}

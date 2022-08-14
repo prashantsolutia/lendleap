@@ -1,0 +1,31 @@
+.auth--header{
+    p{
+        font-size: 14px;
+        color: #E48E29;
+        font-weight: 400;
+        padding: 30px 0;
+        a{
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.left--box{
+    h1{
+        font-size: 26px;
+        line-height: 24px;
+        color: #19334A;
+        margin: 0 0 15px 0;
+    }
+    .signup--box{
+        background: #F0F8FF;
+        border: 1px solid #3D566C;
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 24px;
+        padding: 40px;
+        min-height: 400px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}

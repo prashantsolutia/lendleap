@@ -1,0 +1,62 @@
+<header class="container auth--header text-right">
+  <p class="m-0">Already have an acount? <a>Login!</a> </p>
+</header>
+
+<div fxLayout="row" fxLayoutGap="80px" class="container"> 
+  <div class="left--box" 
+        fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="60" fxFlex.xl="60">
+    <h1 class="text-center">Sign Up!</h1>
+    <div class="signup--box">
+        <h2 class="font-18 fw-500 mb-2">Basic Information</h2> 
+        <div  [formGroup]="signupform">
+          <div fxLayout="row">
+            <mat-form-field appearance="outline" class="full-width"> 
+              <input formControlName="email" matInput placeholder="Email Id" value="ishan@solutia.tech" required> 
+              <mat-hint *ngIf="signupform.invalid">Please contact the admin if you want to change your email address</mat-hint>
+              <mat-error *ngIf="signupform.invalid">
+                Please enter a valid email address
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <div fxLayout="row" fxLayoutGap="40px">
+            <div fxFlex="50">
+              <mat-form-field appearance="outline" class="full-width"> 
+                <input formControlName="fname" matInput placeholder="First Name" required> 
+                <mat-error *ngIf="signupform.invalid">
+                  Please enter a valid email address
+                </mat-error> 
+              </mat-form-field>
+            </div>
+            <div fxFlex="50">
+              <mat-form-field appearance="outline" class="full-width"> 
+                <input formControlName="lname" matInput placeholder="Last Name" required> 
+                <mat-error *ngIf="signupform.invalid">
+                  Please enter a valid email address
+                </mat-error> 
+              </mat-form-field>
+            </div>
+          </div>
+          <div fxLayout="row">
+            <mat-form-field appearance="outline" class="full-width"> 
+              <input formControlName="phonenumber" matInput placeholder="Phone Number" required>
+              <mat-error *ngIf="signupform.invalid">
+                Please enter a valid email address
+              </mat-error>  
+            </mat-form-field>
+          </div>
+         
+          <div fxLayout="row" fxLayoutAlign="center center">
+            <button (click)="enterOtoModal()" type="button" class="primary--btn" mat-raised-button>
+              Verify email
+            </button>
+          </div>
+         
+
+        </div>
+        
+    </div>
+  </div>
+  <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="40" fxFlex.xl="40">
+    ascsa
+  </div>
+</div>

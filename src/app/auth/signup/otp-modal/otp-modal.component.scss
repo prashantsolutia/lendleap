@@ -1,0 +1,17 @@
+ 
+::ng-deep{
+    .otp--modal{
+        .mat-dialog-container{ 
+            background: #F0F8FF;
+            border: 1px solid #3D566C;
+            box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 24px;
+            padding: 40px;
+        }
+        .resend--otp{
+            position: absolute;
+            right: 0;
+            bottom: -25px; 
+        }
+    }
+}

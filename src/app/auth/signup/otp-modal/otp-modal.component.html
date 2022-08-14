@@ -1,0 +1,18 @@
+<label class="font-18 fw-500 mb-3" fxLayout="row">Please enter OTP</label>
+
+<form [formGroup]="otpform">
+    <div class="w-100" fxLayout="column">
+        <mat-form-field appearance="outline" class="full-width"> 
+            <input formControlName="otp" matInput placeholder="Enter OTP" required> 
+            <div fxLayout="row" class="resend--otp"><a class="clr-orange font-14 fw-400">Resend OTP</a></div>
+            <mat-error *ngIf="otpform.invalid">
+                Please enter valid OTP
+            </mat-error>
+        </mat-form-field>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center center">
+        <button [mat-dialog-close]="true" type="button" class="primary--btn" mat-raised-button>
+            Verify OTP
+        </button>
+    </div>
+</form>
