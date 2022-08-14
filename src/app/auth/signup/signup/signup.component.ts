@@ -2,12 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { fadeInUp400ms } from 'src/@vex/animations/fade-in-up.animation';
 import { OtpModalComponent } from '../otp-modal/otp-modal.component';
 
 @Component({
   selector: 'vex-signup',
   templateUrl: './signup.component.html',
-  styleUrls: ['./signup.component.scss']
+  styleUrls: ['./signup.component.scss'],
+  animations: [
+    fadeInUp400ms
+  ]
 })
 export class SignupComponent implements OnInit {
 

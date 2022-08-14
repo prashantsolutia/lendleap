@@ -1,7 +1,7 @@
-<div fxLayout="row" fxLayoutGap="80px" class="container">
-    <div class="left--box" fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="60" fxFlex.xl="60">
+<div @fadeInUp fxLayout="row" fxLayoutGap="80px" fxLayoutAlign="start center"  class="container">
+    <div class="left--box" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="100" fxFlex.lg="60" fxFlex.xl="60">
         <div class="mb-8">
-            <img class="m-0-auto" src="assets/img/logo.svg">
+            <img class="m-0-auto" src="assets/img/logo.svg" alt="">
         </div>
         <h1 class="text-center">Sign Up!</h1>
         <div class="signup--box">
@@ -18,7 +18,7 @@
                         </mat-error>
                     </mat-form-field>
                 </div>
-                <div fxLayout="row" fxLayoutGap="40px">
+                <div fxLayout="row" fxLayoutGap="40px" fxLayoutGap.sm="10px">
                     <div fxFlex="50">
                         <mat-form-field appearance="outline" class="full-width">
                             <input formControlName="fname" matInput placeholder="First Name" required>
@@ -56,7 +56,7 @@
 
         </div>
     </div>
-    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="40" fxFlex.xl="40">
-        ascsa
+    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="40" fxFlex.xl="40">
+        <img class="m-0-auto" src="assets/img/signup-right.svg" alt="">
     </div>
 </div>
