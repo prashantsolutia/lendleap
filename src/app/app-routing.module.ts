@@ -16,6 +16,10 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./auth/signin/signin-layout/signin-layout.module').then(m => m.SigninLayoutModule),
   },
+  {
+    path: 'borrower',
+    loadChildren: () => import('./borrower/borrower-layout.module').then(m => m.BorrowerLayoutModule),
+  },
 ];
 
 @NgModule({
