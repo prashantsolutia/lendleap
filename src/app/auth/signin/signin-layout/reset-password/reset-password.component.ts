@@ -5,16 +5,16 @@ import { Router } from '@angular/router';
 import { fadeInUp400ms } from 'src/@vex/animations/fade-in-up.animation';
 
 @Component({
-  selector: 'vex-signin',
-  templateUrl: './signin.component.html',
-  styleUrls: ['./signin.component.scss'],
+  selector: 'vex-reset-password',
+  templateUrl: './reset-password.component.html',
+  styleUrls: ['./reset-password.component.scss'],
   animations: [
     fadeInUp400ms
   ]
 })
-export class SigninComponent implements OnInit {
+export class ResetPasswordComponent implements OnInit {
 
-  signinform: FormGroup;
+  resetpasswordform: FormGroup;
   
   constructor( 
     private router: Router,
@@ -23,9 +23,9 @@ export class SigninComponent implements OnInit {
     { }
 
   ngOnInit() { 
-    this.signinform = this.fb.group({
-      email: ['', Validators.required],
-      password: ['', Validators.required], 
+    this.resetpasswordform = this.fb.group({
+      newpassword: ['', Validators.required],
+      confirmPassword: ['', Validators.required], 
     });
   }
 

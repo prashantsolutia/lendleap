@@ -5,16 +5,15 @@ import { Router } from '@angular/router';
 import { fadeInUp400ms } from 'src/@vex/animations/fade-in-up.animation';
 
 @Component({
-  selector: 'vex-signin',
-  templateUrl: './signin.component.html',
-  styleUrls: ['./signin.component.scss'],
+  selector: 'vex-forgot-password',
+  templateUrl: './forgot-password.component.html',
+  styleUrls: ['./forgot-password.component.scss'],
   animations: [
     fadeInUp400ms
   ]
 })
-export class SigninComponent implements OnInit {
-
-  signinform: FormGroup;
+export class ForgotPasswordComponent implements OnInit {
+  forgotpasswordform: FormGroup;
   
   constructor( 
     private router: Router,
@@ -23,7 +22,7 @@ export class SigninComponent implements OnInit {
     { }
 
   ngOnInit() { 
-    this.signinform = this.fb.group({
+    this.forgotpasswordform = this.fb.group({
       email: ['', Validators.required],
       password: ['', Validators.required], 
     });

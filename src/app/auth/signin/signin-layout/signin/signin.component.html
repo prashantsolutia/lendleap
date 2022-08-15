@@ -1,1 +1,40 @@
-<p>signin works!</p>
+<div @fadeInUp class="signin--box" fxLayout="column" fxFlex.xs="100" fxFlex.sm="600px" fxFlex.md="600px" fxFlex.lg="600px" fxFlex.xl="600px">
+    <div fxLayout="column">
+        <div class="mb-4">
+            <img class="cursor-pointer" [routerLink]="['/']"   src="assets/img/logo.svg" alt="">
+        </div>
+        <p class="font-18 mb-5">Please enter your information below to login!</p>
+    </div> 
+    <div fxLayout="column" class="form--box">
+        <div [formGroup]="signinform">
+            <div fxLayout="row">
+                <mat-form-field appearance="outline" class="full-width">
+                    <input formControlName="email" matInput placeholder="Email address"
+                        required>
+                    <mat-error *ngIf="signinform.invalid">
+                        Email address cannot be blank.
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div fxLayout="row">
+                <div fxFlex="100">
+                    <mat-form-field appearance="outline" class="full-width">
+                        <input type="password" formControlName="password" matInput
+                            placeholder="Password" required>
+                            <div fxLayout="row" class="forgot--pass">
+                                <a [routerLink]="['/forgot-password']" class="clr-orange font-14 fw-400">Forgot password?</a>
+                            </div>
+                        <mat-error *ngIf="signinform.invalid">
+                            Password cannot be blank.
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="center center">
+                <button type="button" class="primary--btn mt-8" mat-raised-button>
+                    Login
+                </button>
+            </div>
+        </div>
+    </div> 
+</div> 

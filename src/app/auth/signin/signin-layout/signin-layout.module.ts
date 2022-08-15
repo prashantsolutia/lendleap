@@ -14,9 +14,11 @@ import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
 import { SigninLayoutComponent } from './signin-layout.component';
 import { SigninRoutingModule } from './signin-layout-routing.module';
 import { SigninComponent } from './signin/signin.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 @NgModule({
-  declarations: [ SigninLayoutComponent, SigninComponent ],
+  declarations: [ SigninLayoutComponent, SigninComponent, ForgotPasswordComponent, ResetPasswordComponent ],
   imports: [
     CommonModule, 
     SigninRoutingModule,
