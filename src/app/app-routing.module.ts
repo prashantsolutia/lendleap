@@ -12,6 +12,10 @@ const routes: Routes = [
     path: '',
     loadChildren: () => import('./auth/signup/signup-layout.module').then(m => m.SignupLayoutModule),
   },
+  {
+    path: '',
+    loadChildren: () => import('./auth/signin/signin-layout/signin-layout.module').then(m => m.SigninLayoutModule),
+  },
 ];
 
 @NgModule({
