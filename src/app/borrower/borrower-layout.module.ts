@@ -6,14 +6,14 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatPseudoCheckboxModule } from '@angular/material/core';
-import { IconModule } from '@visurel/iconify-angular';  
+import { MatPseudoCheckboxModule, MatRippleModule } from '@angular/material/core'; 
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner' 
 import { MatDialogModule } from '@angular/material/dialog';
 import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';   
 import { BorrowerRoutingModule } from './borrower-layout-routing.module';
 import { DayOneComponent } from './day-one/day-one.component';
 import { BorrowerLayoutComponent } from './borrower-layout.component';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [BorrowerLayoutComponent, DayOneComponent],
@@ -27,10 +27,11 @@ import { BorrowerLayoutComponent } from './borrower-layout.component';
     MatIconModule,
     MatButtonModule,
     MatTooltipModule,
-    MatPseudoCheckboxModule,
-    IconModule, 
+    MatPseudoCheckboxModule, 
     MatProgressSpinnerModule, 
-    MatDialogModule
+    MatDialogModule,
+    MatMenuModule,
+    MatRippleModule
     
   ],  
   providers: [

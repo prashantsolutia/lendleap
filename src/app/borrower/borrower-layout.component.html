@@ -3,9 +3,34 @@
         <a [routerLink]="['/']">
             <img class="" src="assets/img/logo.svg" alt="">
         </a>
-        <a>
-            <img class="" src="assets/img/bell.svg" alt="">
-        </a>
+        <div fxLayout="row" fxLayoutAlign="start center">
+            <a>
+                <img class="icon--bell" src="assets/img/bell.svg" alt="">
+            </a>
+            <button [matMenuTriggerFor]="menu" class="logout--btn">
+                <h1 class="m-0"><b>P</b></h1>
+            </button>
+            <mat-menu #menu="matMenu" class="logout--dd"> 
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                        <div class="dropdown-heading">Prashant T</div>
+                    </div>
+                    <div class="dropdown-content"  fxLayout="row" fxLayoutAlign="start center" matRipple>
+                        <div fxFlex="auto">
+                            <div class="notification-label" fxLayout="row" fxLayoutAlign="start center">
+                                <mat-icon class="mr-3">account_circle</mat-icon> Profile
+                            </div> 
+                            <div class="notification-label" fxLayout="row" fxLayoutAlign="start center">
+                                <mat-icon class="mr-3">settings</mat-icon> Setting
+                            </div> 
+                            <div class="notification-label" fxLayout="row" fxLayoutAlign="start center">
+                                <mat-icon class="mr-3">exit_to_app</mat-icon> Logout
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </mat-menu>
+        </div>
 
     </div>
 </header>

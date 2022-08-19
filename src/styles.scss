@@ -91,6 +91,57 @@ input.mat-input-element{
 }
 
 .borrower--header{
-  min-height: 80px;
+  min-height: 60px;
   background-color: #3D566C;
+  .icon--bell{
+    width: 25px;
+  }
+  .logout--btn{
+    padding: 0;
+    border: 1px solid #A0C97B;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #fff;
+    margin-left: 25px; 
+    h1{
+      color: #A0C97B;
+      font-size: 22px;
+    }
+  } 
+}
+.logout--dd{
+  .mat-menu-content {
+    padding: 0 !important;
+    .dropdown {
+      background: #fff;   
+      width: 265px; 
+      box-shadow: 0 0 5px #ddd;
+      .dropdown-header{
+        background-color: #A0C97B;
+        padding: 15px 10px;
+        color: #fff;
+        font-size: 18px;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+      }
+      .dropdown-content{
+        .notification-label{
+          padding: 12px 10px;
+          font-size: 15px;
+          border-bottom: 1px solid #f5f5f5;
+          cursor: pointer;
+          &:hover{
+            background-color: #f3f3f3;
+          }
+          .mat-icon{
+            height: 20px;
+            width: 20px;
+            font-size: 20px;
+            color: #9fca76;
+          }
+        }
+      }
+    }
+  }
 }
