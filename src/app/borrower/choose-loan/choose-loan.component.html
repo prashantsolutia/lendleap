@@ -1,0 +1,15 @@
+<div  @fadeInUp class="choose--loan--wrapper" fxLayout="row" >
+    <div class="container" fxLayout="column">
+        <div fxLayout="row" fxFlex="100">
+            <h2 class="font-16">Select a loan category</h2>
+        </div>
+        <div class="mt-10" fxLayout="row" fxLayoutGap="150px" fxLayoutAlign="center center">
+            <button mat-button [routerLink]="['/borrower/dashboard']">Bridge Loan</button>
+            <button mat-button>Construction loan</button>
+        </div>
+        <div class="mt-10" fxLayout="row" fxLayoutGap="150px" fxLayoutAlign="center center">
+            <button mat-button>Fix and Flip loan</button>
+            <button mat-button>Rental loan</button>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,5 @@
 <header class="borrower--header" fxLayout="row">
-    <div class="container" fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="space-between center">
+    <div class="container w-100" fxLayout="row" fxLayoutGap="5px" fxLayoutAlign="space-between center">
         <a [routerLink]="['/']">
             <img class="" src="assets/img/logo.svg" alt="">
         </a>
@@ -23,7 +23,7 @@
                             <div class="notification-label" fxLayout="row" fxLayoutAlign="start center">
                                 <mat-icon class="mr-3">settings</mat-icon> Setting
                             </div> 
-                            <div class="notification-label" fxLayout="row" fxLayoutAlign="start center">
+                            <div [routerLink]="['/signin']" class="notification-label" fxLayout="row" fxLayoutAlign="start center">
                                 <mat-icon class="mr-3">exit_to_app</mat-icon> Logout
                             </div> 
                         </div>

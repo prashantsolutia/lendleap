@@ -1,0 +1,63 @@
+.borrower--dashboard{
+    background-color: #f0f8ff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: calc(100vh - 60px);
+    overflow: auto;
+    .header--box{
+        box-shadow: 0 3px 0px #a0c97b;
+        padding: 15px;
+        background: #EDEDED;
+        border-radius: 10px;
+        h1{
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 600;
+            color: #3D566C;
+            margin-bottom: 3px;
+        }
+        h2{
+            font-size: 35px;
+            line-height: 35px;
+            font-weight: 600;
+            color: #3D566C; 
+            word-break: break-all;
+        }
+        p{
+            font-size: 14px;
+            line-height: 20px;
+            color: #000;
+        }
+    }
+    .filter--box{
+        ::ng-deep{
+            .mat-form-field-wrapper{
+                margin: 0;
+                padding: 0 !important;
+            }
+            .mat-form-field-subscript-wrapper {
+                display: none;
+            }
+            .mat-form-field-appearance-outline .mat-form-field-outline{
+                border-color: #707070;
+                background: #F9F9F9;
+            }
+        }
+    }
+    .records--wrap{
+        .records--box{
+            background: #FFFFFF;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            padding: 22px 15px;
+            .records--row{
+                label{
+                    color: #5E5E5E;
+                }
+                p{
+                    color: #000;
+                }
+            }
+        }
+    }
+}

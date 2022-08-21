@@ -14,9 +14,11 @@ import { BorrowerRoutingModule } from './borrower-layout-routing.module';
 import { DayOneComponent } from './day-one/day-one.component';
 import { BorrowerLayoutComponent } from './borrower-layout.component';
 import { MatMenuModule } from '@angular/material/menu';
+import { ChooseLoanComponent } from './choose-loan/choose-loan.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
-  declarations: [BorrowerLayoutComponent, DayOneComponent],
+  declarations: [BorrowerLayoutComponent, DayOneComponent, ChooseLoanComponent, DashboardComponent],
   imports: [
     CommonModule, 
     BorrowerRoutingModule,

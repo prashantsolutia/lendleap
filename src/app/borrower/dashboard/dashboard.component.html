@@ -1,0 +1,101 @@
+<div class="borrower--dashboard"  @fadeInUp>
+    <div fxLayout="column" class="container" fxLayoutAlign="start start">
+        
+        <!-- Header boxes -->
+        <div fxLayout="row" fxLayoutAlign="center center" class="w-100">  
+            <div fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="center stretch" class="">
+                <div *ngFor="let headerBoxes of headerBox" class="header--box" fxLayout="column"
+                fxFlex.xs="100" fxFlex.sm="230px" fxFlex.md="268px" fxFlex.lg="268px" fxFlex.xl="268px">
+                    <div fxLayout="row"  fxFlex="100" fxLayoutAlign="end end">
+                        <h1>{{headerBoxes.name}}</h1>
+                    </div>
+                    <div fxLayout="column" fxFlex="100">
+                        <h2 class="mb-0">{{headerBoxes.requests}}</h2>
+                        <p class="mb-2">Requests</p>
+                    </div> 
+                    <div fxLayout="column" fxFlex="100">
+                        <h2 class="mb-0">{{headerBoxes.valuation}}</h2>
+                        <p class="mb-0">Valuation </p>
+                    </div>
+                </div> 
+            </div>
+        </div> 
+
+        <!-- Filter section -->
+        <div class="filter--box w-100 mt-6 mb-3" fxLayout="row" fxLayoutGap="25px"  fxLayoutAlign="start center">
+            <div fxFlex.xs="100" fxFlex.sm="454px" fxFlex.md="484px" fxFlex.lg="484px" fxFlex.xl="484px">
+                 <mat-form-field appearance="outline" class="full-width form--md">
+                    <mat-icon matPrefix>search</mat-icon>
+                    <input matInput placeholder="Search" value="" > 
+                </mat-form-field>  
+            </div>
+            <div fxFlex.xs="100" fxFlex.sm="98px" fxFlex.md="98px" fxFlex.lg="98px" fxFlex.xl="98px">
+                 <button type="button" class="primary--btn btn-md" mat-raised-button>
+                    Search
+                </button> 
+            </div>
+            <div fxFlex.xs="100" fxFlex.sm="100px" fxFlex.md="100px" fxFlex.lg="100px" fxFlex.xl="100px">
+                <button type="button" class="secondary--btn btn-md" mat-raised-button>
+                    Add Filter
+                    <img class="ml-2" src="assets/img/filter.svg" alt="">
+               </button> 
+           </div> 
+        </div>
+
+        <div class="records--wrap w-100" fxLayout="column">
+            <div  *ngFor="let recordBoxes of recordBox" class="records--box w-100 mb-1" fxLayout="column">
+                <div class="records--row w-100" fxLayout="column">
+                    <div  fxLayout="row" fxLayoutGap="35px" fxLayoutAlign="start center" class="mb-5">
+                        <div fxFlex.xs="100" fxFlex.sm="10" fxFlex.md="10" fxFlex.lg="10" fxFlex.xl="10">
+                            <label class="m-0 fw-500 font-14">ID</label>
+                            <p class="m-0 fw-500 font-16">{{recordBoxes.id}}</p>
+                        </div>
+                        <div fxFlex.xs="100" fxFlex.sm="20" fxFlex.md="20" fxFlex.lg="20" fxFlex.xl="20">
+                            <label class="m-0 fw-500 font-14">Category</label>
+                            <p class="m-0 fw-500 font-16">{{recordBoxes.category}}</p>
+                        </div>
+                        <div fxFlex.xs="100" fxFlex.sm="15" fxFlex.md="15" fxFlex.lg="15" fxFlex.xl="15">
+                            <label class="m-0 fw-500 font-14">Type</label>
+                            <p class="m-0 fw-500 font-16">{{recordBoxes.type}}</p>
+                        </div>
+                        <div fxFlex.xs="100" fxFlex.sm="15" fxFlex.md="15" fxFlex.lg="15" fxFlex.xl="15">
+                            <label class="m-0 fw-500 font-14">Status</label>
+                            <p class="m-0 fw-500 font-16">{{recordBoxes.status}}</p>
+                        </div>
+                        <div fxFlex.xs="100" fxFlex.sm="15" fxFlex.md="15" fxFlex.lg="15" fxFlex.xl="15">
+                            <label class="m-0 fw-500 font-14">Raised on</label>
+                            <p class="m-0 fw-500 font-16">{{recordBoxes.raisedOn}}</p>
+                        </div>
+                        <div fxFlex.xs="100" fxFlex.sm="10" fxFlex.md="10" fxFlex.lg="10" fxFlex.xl="10">
+                            <label class="m-0 fw-500 font-14">Amount</label>
+                            <p class="m-0 fw-500 font-16">{{recordBoxes.amount}}</p>
+                        </div>
+                        <div fxFlex.xs="100" fxFlex.sm="135px" fxFlex.md="135px" fxFlex.lg="135px" fxFlex.xl="135px"> 
+                            <button type="button" class="primary--btn btn-md " mat-raised-button>
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                    <div  fxLayout="row" fxLayoutGap="35px" fxLayoutAlign="start center">
+                        <div fxFlex.xs="100" fxFlex.sm="26" fxFlex.md="26" fxFlex.lg="26" fxFlex.xl="26">
+                            <label class="m-0 fw-500 font-14">Property</label>
+                            <p class="m-0 fw-500 font-16">{{recordBoxes.property}}</p>
+                        </div>
+                        <div fxFlex.xs="100" fxFlex.sm="13" fxFlex.md="13" fxFlex.lg="13" fxFlex.xl="13">
+                            <label class="m-0 fw-500 font-14">Broker</label>
+                            <p class="m-0 fw-500 font-16">{{recordBoxes.broker}}</p>
+                        </div>
+                        <div fxFlex.xs="100" fxFlex.sm="25" fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25">
+                            <label class="m-0 fw-500 font-14">borrower</label>
+                            <p class="m-0 fw-500 font-16">{{recordBoxes.borrower}}</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+

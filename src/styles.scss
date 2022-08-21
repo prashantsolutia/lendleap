@@ -10,7 +10,7 @@ a {
     text-decoration: underline;
   }
 }
-.full-width, w-100{ width: 100%;}
+.full-width, .w-100{ width: 100%;}
 .container{max-width: 1280px; margin: 0 auto;}
 
 .fw-400 {font-weight: 400 !important;}
@@ -52,6 +52,9 @@ input.mat-input-element{
 .mat-form-field-appearance-outline .mat-form-field-infix {
   padding: 6px 0 10px 10px;
 }
+.mat-form-field-appearance-outline.form--md .mat-form-field-infix {
+  padding: 2px 0 7px 6px;
+}
 .mat-form-field-wrapper{
   padding-bottom: 5px !important;
 }
@@ -87,8 +90,66 @@ input.mat-input-element{
     min-width: 160px;
     min-height: 40px;
     box-shadow: none;
+    border: 1px solid transparent;
+    &:hover{
+      background: #fff;
+      color: #3D566C;
+      border-color: #3D566C;
+    }
+    &.btn-lg{
+      font-size: 16px;
+      min-width: 245px;
+      min-height: 68px;
+      border-radius: 50px;
+    }
+    &.btn-md{
+      min-width: unset;
+      min-height: unset;
+      padding: 0 27px;
+      font-weight: 400;
+      line-height: 30px;
+    }
   }
 }
+
+.secondary--btn{
+  &.mat-raised-button{
+    background: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3D566C;
+    border-radius: 20px;
+    min-width: 160px;
+    min-height: 40px;
+    box-shadow: none;
+    border: 1px solid #3D566C;
+    &:hover{
+      background: #3D566C;
+      color: #fff;
+      border-color: #3D566C;
+    }
+    &.btn-lg{
+      font-size: 16px;
+      min-width: 245px;
+      min-height: 68px;
+      border-radius: 50px;
+    }
+    &.btn-md{
+      min-width: unset;
+      min-height: unset;
+      padding: 0 23px;
+      font-weight: 400;
+      line-height: 30px;
+    }
+    .mat-button-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+
 
 .borrower--header{
   min-height: 60px;
@@ -105,7 +166,7 @@ input.mat-input-element{
     background-color: #fff;
     margin-left: 25px; 
     h1{
-      color: #A0C97B;
+      color: #3d566c;
       font-size: 22px;
     }
   } 
@@ -138,7 +199,7 @@ input.mat-input-element{
             height: 20px;
             width: 20px;
             font-size: 20px;
-            color: #9fca76;
+            color: #3d566c;
           }
         }
       }
